@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Vende tu alma al diablo 38)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="forma">
+            <h1>Necesitas dinero facil amiwis?</h1>
+            <form>
+                <div>
+                    <label for="necesito">Cuanto dinero necesitas? 
+                        <input class="nec" type="number" placeholder="Ponga aqui cuanto dinero necesitas prestar" id="necesito">
+                    </label>
+                </div>
+                <div>
+                    <label for="numcuotas">A cuantas cuotas deseas pagarlo? (te recomiendo no mas de 48 o mejor vende un riñon) 
+                        <input type="number" placeholder="Aqui pon las cuotas" id="numcuotas">
+                    </label>
+                </div>
+                <div>
+                </div>
+            </form>
+            <button id="b1" onclick="gen_table();">CALCULA</button>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <td>Cuota </td>
+                        <td>Dinero que abonas</td>
+                        <td>Interes que pagas</td>
+                        <td>Total a pagar de la cuota</td>
+                    </tr>
+                </thead>
+                <tbody id="tcuerpo">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="ft">TOTAL</td>
+                        <td id="t1"></td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+    <button class="b2" onclick="pedir_prestamo();">Pedir Prestamo</button>
+    <button class="b3" onclick="pago_cuota();">Paga una cuota</button>
+    <script src="./scripts/prestamo.js"></script>
+
+    <h2>Que vas a comprar con esto?</h2>
+    <button id="b99" onclick="createarray1();">Iniciar Lista de compras</button>
+
+
+</body>
+
+
+</html>
